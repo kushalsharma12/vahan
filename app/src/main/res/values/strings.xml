@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Vahan 2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appNameCapital">VAHAN</string>
+    <string name="appNameFullForm">Vehicle Anlysis for Hardware and Assistance Network</string>
+    <string name="experts_near_you">Experts Near You</string>
+    <string name="explore_experts_in_your_region_talk_with_them_to_get_assurance_and_assistance_about_your_vehicle"><![CDATA[Explore experts in your region & talk with them to get assurance and assistance about your vehicle.]]></string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_an_account">Already have an Account ?</string>
+    <string name="my_profile">My Profile</string>
+    <string name="experts">Experts</string>
+    <string name="information">Information</string>
+    <string name="below_are_some_of_your_vehicle_s_parts_which_should_be_maintained_regularly">Below are some of your vehicle\'s parts which should be maintained regularly.</string>
+    <string name="consult_now">Consult Now</string>
+    <string name="chat_with_user">Chat with User</string>
+    <string name="positionText"><b>POSITION- </b> </string>
+    <string name="price"><b>PRICE- </b> </string>
+    <string name="vhps">VHPS</string>
+</resources>

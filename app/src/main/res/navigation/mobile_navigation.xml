@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/initialFragment">
+
+    <fragment
+        android:id="@+id/navigation_expert"
+        android:name="com.example.vahan2.ui.expert.ExpertFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_expert" >
+        <action
+            android:id="@+id/action_navigation_expert_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_my_profile"
+        android:name="com.example.vahan2.ui.myProfile.MyProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_navigation_my_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+
+
+            />
+        <action
+            android:id="@+id/action_navigation_my_profile_to_initialFragment"
+            app:destination="@id/initialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/initialFragment"
+        android:name="com.example.vahan2.InitialFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_initial" >
+        <action
+            android:id="@+id/action_initialFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.vahan2.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_expert"
+            app:popUpTo="@id/initialFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.vahan2.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_navigation_home"
+            app:destination="@id/navigation_expert"
+            app:popUpTo="@id/initialFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.vahan2.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_navigation_my_profile"
+            app:destination="@id/navigation_my_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.vahan2.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_navigation_expert"
+            app:destination="@id/navigation_expert" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="com.example.vahan2.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_navigation_information_to_infoClcickedFragment"
+            app:destination="@id/infoClcickedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoClcickedFragment"
+        android:name="com.example.vahan2.InfoClcickedFragment"
+        android:label="fragment_info_clcicked"
+        tools:layout="@layout/fragment_info_clcicked" >
+        <action
+            android:id="@+id/action_infoClcickedFragment_to_navigation_information"
+            app:destination="@id/navigation_information" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_vhps"
+        android:name="com.example.vahan2.VhpsFragment"
+        android:label="fragment_vhps"
+        tools:layout="@layout/fragment_vhps" />
+</navigation>

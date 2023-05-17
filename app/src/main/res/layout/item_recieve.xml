@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_parent_recieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_child_recieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/sentimg"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/messageRecieveTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="4dp"
+                android:text="Hello, How are you"
+                android:textColor="#6c6a6a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/timeStamp_recieve_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="12:30 PM"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userNAmeditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Username"
+                android:fontFamily="@font/poppins_bold"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userMailEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Email"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/phoneEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Phone Number"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+
+
+                />
+
+            <EditText
+                android:id="@+id/adressEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Address"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Vehicle Details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/vehicleModelNoEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Email"
+                android:fontFamily="@font/poppins_bold"
+                android:hint="Vehicle Model"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/vehicleRegYearEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Vehicle Registration"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Vehicle Registration"
+                android:selectAllOnFocus="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/vehicleNameEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Vehicle Name"
+                android:hint="Vehicle Name"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/rtoNoEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:hint="RTO Number"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/distanceTravelledEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints="Email"
+                android:hint="Distance Travelled"
+                android:selectAllOnFocus="true"
+
+                />
+
+            <Button
+                android:id="@+id/updateBtnEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginHorizontal="32dp"
+                android:text="Update"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/green_color"
+                android:src="@drawable/baseline_mode_edit_24" />
+
+            <Button
+                android:id="@+id/cancelBtnEditProfileFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginHorizontal="32dp"
+                android:text="Cancel"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/red_color"
+                android:src="@drawable/baseline_mode_edit_24" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
